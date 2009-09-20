@@ -1,0 +1,15 @@
+.snk_termin {
+	display:block;
+}
+
+.snk_termin_date {
+	position:relative;
+	padding-right:15px;
+}
+
+.snk_termin_text {
+	position:relative;
+	padding:0px;
+}
+
+
