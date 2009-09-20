@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Scoutnet Kalender</name>
+    <author>Stefan "Mütze" Horst</author>
+    <version>1.5.0</version>
+    <description>A simple Scoutnet Kalender module.</description>
+    <files>
+        <filename>mod_snk.xml</filename>
+        <filename module="mod_snk">mod_snk.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <params>
+    </params>
+</install>
