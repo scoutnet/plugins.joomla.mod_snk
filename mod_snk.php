@@ -10,7 +10,8 @@ try {
 	$helper = new SnkModelSnk();
 	$events = $helper->getEvents($params);
 	$kalenders = $helper->getKalenders($params);
-	require( JModuleHelper::getLayoutPath( 'mod_snk' ) );
+	$link = $params->get('link');
+	require( JModuleHelper::getLayoutPath( 'mod_snk', $params->get('layout', 'default') ) );
 } catch (Exception $e) {
 	echo "<span class='termin'>zZ ist der Scoutnet Kalender down.<br>Bitte versuch es zu einem sp&auml;teren Zeitpunkt noch mal</span>";
 }

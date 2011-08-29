@@ -9,7 +9,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' ); ?>
 foreach ($events as $event) { ?>
 <tr>
 	<td class='snk_termin_date'><? echo strftime("%d.%m.%y",$event['Start']); ?></td>
-	<td class='snk_termin_text'><? echo $event['Title'];?></td>
+	<td class='snk_termin_text'><? echo (($link != "")?"<a href='".$link."'>":"").$event['Title'].(($link!="")?"</a>":"");?></td>
 </tr>
 <?}?>
 </table>

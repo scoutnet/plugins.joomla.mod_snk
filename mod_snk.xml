@@ -1,22 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install type="module" version="1.5.0">
-    <name>Scoutnet Kalender</name>
-    <author>Stefan "Mütze" Horst</author>
-    <version>0.9</version>
-    <description>A simple Scoutnet Kalender module.</description>
-    <files>
-        <filename>mod_snk.xml</filename>
-        <filename module="mod_snk">mod_snk.php</filename>
-        <filename>index.html</filename>
-        <filename>tmpl/default.php</filename>
-        <filename>tmpl/index.html</filename>
-	<filename>assets/kalender.css</filename>
-	<filename>assets/index.html</filename>
-    </files>
-    <params>
-	    <param type="text" name="SSIDs" size="25" label="Kalender SSIDs:" description="Please enter the SSIDs of the Kalenders you want to show. The list must be comma seperated. If left empty the calender with SSID 4 is shown." />
-	    <param type="text" name="Kategories" size="25" label="Kalender Kategorien:" description="Please enter the Ids of the Kategories, you want to show. This list must be comma seperated. If left empty all Categories are shown." />
-	    <param type="text" name="Stufen" size="25" label="Kalender Stufen:" description="Please enter the Stufen you want to show. The list must be comma seperated. If left empty all Stufen will be shown." />
-	    <param type="text" name="limit" size="25" label="Anzahl von Terminen:" description="Gib die anzahl der Termine ein, die du anzeigen möchtest. Wenn du nichts nimmst, wird 20 angenommen." />
-    </params>
-</install>
+<extension 
+	type="module"
+	version="1.7"
+	client="site"
+	method="upgrade">
+	<name>Scoutnet Kalender</name>
+	<author>Stefan "Mütze" Horst</author>
+	<version>1.7.1</version>
+	<description>A simple Scoutnet Kalender module.</description>
+
+	<creationDate>September 2009</creationDate>
+	<copyright>Copyright (C) 2009 - 2011 Stefan Horst. All rights reserved.</copyright>
+	<license>MÃ¼tze lizens</license>
+	<authorEmail>muetze@scoutnet.de</authorEmail>
+	<authorUrl>www.scoutnet.de</authorUrl>
+	<description>MOD_MENU_XML_DESCRIPTION</description>
+	<files>
+		<filename>mod_snk.xml</filename>
+		<filename module="mod_snk">mod_snk.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_snk.ini</language>
+		<language tag="en-GB">en-GB.mod_snk.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_MENU" />
+
+    <config>
+    <fields name="params">
+	    <fieldset name="basic">
+		    <field type="text" name="SSIDs" size="25" label="Kalender SSIDs:" description="Please enter the SSIDs of the Kalenders you want to show. The list must be comma seperated. If left empty the calender with SSID 4 is shown." />
+		    <field type="text" name="Kategories" size="25" label="Kalender Kategorien:" description="Please enter the Ids of the Kategories, you want to show. This list must be comma seperated. If left empty all Categories are shown." />
+		    <field type="text" name="Stufen" size="25" label="Kalender Stufen:" description="Please enter the Stufen you want to show. The list must be comma seperated. If left empty all Stufen will be shown." />
+		    <field type="text" name="limit" size="25" label="Anzahl von Terminen:" description="Gib die anzahl der Termine ein, die du anzeigen möchtest. Wenn du nichts nimmst, wird 20 angenommen." />
+		    <field type="text" name="link" size="25" label="Fester Link fuer Termine:" description="Gib hier bitte einen Link ein, der aufgerufen wird, wenn man auf einen Termin klickt. Falls dieses Feld leer ist, wird kein link erzeugt." />
+	    </fieldset>
+	    </fields>
+    </config>
+</extension>
