@@ -1,5 +1,5 @@
 NAME = mod_snk
-XML = mod_snk.xml
+XML = $(NAME).xml
 CURRENTVERSION = $(shell cat src/$(XML) | grep -i "<Version>" | cut -f 2 -d ">" | cut -f 1 -d "<")
 
 default: tag build build/$(NAME)-$(CURRENTVERSION)-final.zip build/$(NAME)_update.xml ../scoutnet_download/$(NAME)-$(CURRENTVERSION)-final.zip
