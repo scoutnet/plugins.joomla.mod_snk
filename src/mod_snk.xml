@@ -2,7 +2,7 @@
 <extension type="module" version="1.7" client="site" method="upgrade">
 	<name>Scoutnet Kalender</name>
 	<author>Stefan "Mütze" Horst</author>
-	<version>1.7.1</version>
+	<version>1.7.2</version>
 	<description>A simple Scoutnet Kalender module.</description>
 
 	<creationDate>2011-09-16</creationDate>
